@@ -54,7 +54,7 @@ app.post('/api/auth/register', async (req, res) => {
       res.status(201).send('Wow, an original username!');
     });
   } catch (err) {
-    res.status(500).send('Error making password safe');
+    res.status(500).send('Error making password');
   }
 });
 
@@ -119,7 +119,6 @@ app.get('/api/items/:id', checkLoggedIn, (req, res) => {
       return res.status(500).json({ error: 'Error getting item from database' });
     }
     if (!item) {
-      console.log(`Item not found. ID: ${id}, User ID: ${userId}`);
       return res.status(404).json({ error: 'Item not found' });
     }
     console.log('Item found:', item);
