@@ -1,4 +1,4 @@
-Full stack web app for inventory management. Users can login and perform CRUD ops on the inventory. This app was built with a react front end, & express and SQLite for the backend. Passwords are hashed using bcrypt before storing in the database. JWT is used for maintaining user sessions. API endpoints are protected and require authentication
+Full stack web app for inventory management. Users can login and perform CRUD ops on the inventory. This app was built with a react front end, & express and SQLite for the backend/data storage. Passwords are hashed using bcrypt before storing in the database. JWT is used for maintaining user sessions. API endpoints are protected and require authentication
 
 
 API Endpoints:
